@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="bk Healthにおける健康記録、顔写真、Google DriveとGmailのデータの利用・保存・削除について。">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#fdfdfb">
+  <title>プライバシーポリシー — bk Health</title><link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">本文へ移動</a>
+  <div class="wrap">
+    <header class="site-header"><a class="brand" href="/" aria-label="bk Health ホーム"><span class="brand-mark" aria-hidden="true">bk</span>bk Health</a><nav class="site-nav" aria-label="メインナビゲーション"><a href="/">概要</a><a href="/privacy/" aria-current="page">データの扱い</a><a href="/terms/">利用について</a></nav></header>
+    <main id="main" class="legal">
+      <p class="eyebrow">Privacy policy</p><h1>データの扱いについて。</h1>
+      <p class="legal-intro">bk Healthは、自分の健康・写真・スキンケアの記録を管理するためのiPhoneアプリです。必要な連携を本人が選び、データの保存先と利用目的を確認できるようにします。</p>
+      <p class="legal-date">作成日：2026年10月25日 · 更新日：2026年10月31日</p>
+      <nav class="toc" aria-label="このページの目次"><ul><li><a href="#records">1. 扱うデータと利用目的</a></li><li><a href="#google">2. Googleとの連携</a></li><li><a href="#storage">3. 保存とバックアップ</a></li><li><a href="#sharing">4. 外部への提供と利用制限</a></li><li><a href="#control">5. 停止・削除・許可の取り消し</a></li><li><a href="#website">6. このWebサイトについて</a></li><li><a href="#changes">7. 変更と問い合わせ</a></li></ul></nav>
+      <section id="records"><h2>1. 扱うデータと利用目的</h2>
+        <p>本人が入力・撮影・取り込みを行ったデータを、個人の記録、比較、振り返り、在庫管理、バックアップと復元に使用します。模擬データと本人の記録は保存先を分けて扱います。</p>
+        <table class="flow-table"><thead><tr><th scope="col">データ</th><th scope="col">使用する目的</th></tr></thead><tbody><tr><td>顔写真と撮影記録</td><td>朝夜の記録、撮影日時・条件の確認、写真の比較と振り返り。写真から本人を識別する認証には使用しません。</td></tr><tr><td>体調・肌・むくみ・生活のメモ</td><td>本人の体感や日々の様子を写真・数値と一緒に確認するため。</td></tr><tr><td>Appleヘルスケアの記録</td><td>本人が読み取りを許可した睡眠、体重、歩数、ワークアウト、心拍数、安静時心拍数、HRVを表示・集計するため。ヘルスケアへの書き込みは行いません。</td></tr><tr><td>化粧品と使用履歴</td><td>商品、未開封の個数、手入力の残量、使用期間、日々に使った商品を管理するため。</td></tr><tr><td>Googleの接続情報</td><td>本人が選んだアカウントを区別し、許可したDrive・Gmail機能を利用するため。アカウント識別子、表示名、許可されたアクセス範囲を扱います。</td></tr></tbody></table>
+        <p>カメラ、写真ライブラリ、通知、ヘルスケアの権限は、対応機能で必要になったときにiOSの仕組みで確認します。権限のない記録や取得できなかった値を、測定済みのゼロとして扱いません。</p>
+      </section>
+      <section id="google"><h2>2. Googleとの連携</h2>
+        <h3>本人によるログインと許可</h3><p>Googleの認証画面を使い、本人がアクセスを許可します。Googleのパスワードをbk Healthの入力欄で収集することはありません。Google Sign-In SDKが接続用トークンを端末のKeychainで管理し、トークンを健康記録のファイルやこのWebサイトへ書き出すことはありません。</p>
+        <h3>Google Drive：写真と撮影記録のバックアップ</h3><p><code>https://www.googleapis.com/auth/drive.file</code>を使用し、アプリが作成・使用する特定のDriveファイルを扱います。Drive内のすべてのファイルを管理する権限は要求しません。</p><p>写真と写真付き日記を端末内で暗号化してから、本人のGoogle Driveへ送信します。写真付き日記には、撮影日時、朝夜の区分、撮影条件、メモ、体感評価、食事やケア、選択した使用商品名などが含まれます。自動バックアップは本人が有効にした場合に、アプリ使用中に実行します。</p>
+        <h3>Gmail：化粧品の購入候補の取り込み</h3><p>Gmail連携に対応する版で、本人が連携を開始した場合に<code>https://www.googleapis.com/auth/gmail.readonly</code>を追加で求めます。この権限はGmailのメールと設定を読み取れる権限です。アプリが指定する購入関連の検索条件・期間・取得上限は、Google側の権限をそのメールだけに限定するものではありません。</p><p>対象メールの本文や必要なヘッダー情報を取得し、端末内で商品名、購入元、注文・明細の識別情報、数量、日時、注文・配送状況などを解析して候補を表示します。解析では外部AIへ本文を送信せず、メール内の画像やリンク先を自動で読み込むこともありません。メールの送信、返信、削除、ラベル変更は行いません。</p><p>メール本文全体、配送先住所、決済情報を在庫へ保存する設計ではありません。本人が確認して取り込んだ商品・数量などと、二重追加を防ぐための識別情報をアプリの記録に保存します。メールが注文・発送を示す場合でも、家に届いた在庫とは自動判定せず、受領の確認を求めます。HTMLメール内にある構造化情報（JSON-LDやMicrodata）から、注文番号・明細番号・数量を確認できる形式を候補にします。文字コードはUTF-8、およびメールに明示された対応する日本語文字コードを扱います。候補にできない場合は、本文から引用しない定型の理由を表示します。通常の文章だけのメールや商品コードだけの明細など、対応外のメールは手入力などで確認してください。</p>
+      </section>
+      <section id="storage"><h2>3. 保存とバックアップ</h2>
+        <p>写真、健康数値、日記、在庫・使用履歴は、端末内のアプリの保存領域で暗号化して保持します。メール本文の解析は取得中の端末内で行い、本文全体を健康記録のアーカイブやバックアップへ保存しません。</p>
+        <ul><li><strong>Google Driveへの写真バックアップ：</strong>写真と写真付き日記を保存します。健康数値、写真のない日記、在庫台帳や使用期間全体は対象に含みません。写真付き日記で本人が選んだ商品名などは含まれるため、Gmailから登録した商品名が含まれる場合があります。</li><li><strong>全体のファイルバックアップ：</strong>本人の操作で、健康数値・日記・写真・在庫・使用期間・取り込みの重複判定情報を暗号化ファイルに書き出します。保存先は本人が選びます。</li><li><strong>復旧用パスワード：</strong>暗号化バックアップの復元に使用します。忘れたパスワードを運営側が確認・再発行して復元する仕組みはありません。本人が安全な場所に保管してください。</li></ul>
+        <p>端末の記録は本人が削除するまで保持します。過去のバックアップは自動で一括削除されないため、端末で削除した写真や記録が、以前のバックアップに残ることがあります。Driveの保存容量や通信量は、本人が利用するGoogleアカウントと回線の条件に従います。</p>
+      </section>
+      <section id="sharing"><h2>4. 外部への提供と利用制限</h2>
+        <p>Google APIから取得したデータは、本人に見える上記の機能を提供するために使用します。広告配信、広告のターゲティング、データ販売、信用評価、汎用AIモデルの学習には使用しません。メール本文、写真、健康記録を解析のために外部AIへ送る機能は、この構成に含めません。</p>
+        <p>GoogleへのAPI通信と、本人が有効にした自分のDriveへの暗号化バックアップを除き、記録をアプリ運営者のサーバーへ集約する仕組みはありません。本人がファイルを書き出し、共有・保存先を選んだ場合は、その選択した先へデータが渡ります。外部の保存先やGoogleによる取り扱いは、それぞれのサービスの規約・プライバシーポリシーにも従います。</p>
+        <h3>Mac：個人の持ちもの記録の書き出し</h3><p>運営者本人のMacで動く書き出し処理が、同じGoogle Cloudプロジェクトのデスクトップ用クライアントで<code>https://www.googleapis.com/auth/drive.file</code>を使い、本人のGoogle Driveの<code>bk-export</code>フォルダに、持ちもの・ほしいものの一覧（品名・写真・使用場所など）を置きます。iPhoneアプリはこのフォルダを読み取り、アプリからの依頼をこのフォルダに書き込みます。健康記録や顔写真はこの処理で扱いません。Google の接続情報は Mac のキーチェーンに保存します。</p>
+        <p class="notice">bk HealthによるGoogle APIから受け取った情報の使用、および他のアプリへの移転は、Limited Use（限定的な使用）の要件を含む<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>に従います。Gmail由来データについては、<a href="https://developers.google.com/workspace/workspace-api-user-data-developer-policy">Google Workspace API User Data and Developer Policy</a>も適用します。</p>
+      </section>
+      <section id="control"><h2>5. 停止・削除・許可の取り消し</h2>
+        <ul><li><strong>自動取得・送信を止める：</strong>アプリ内でヘルスケアの自動更新やDriveの自動バックアップをOFFにできます。設定を止めても、すでに保存された記録はそのまま残ります。</li><li><strong>Google連携を止める：</strong>アプリ内で該当する連携を解除すると、その機能からのアクセスを停止します。これはGoogleアカウント上の許可の取り消しや、Driveのバックアップ削除とは別です。</li><li><strong>Google側の許可を取り消す：</strong><a href="https://myaccount.google.com/connections">Googleアカウントのサードパーティとの接続</a>でbk Healthを確認し、接続を削除できます。同じGoogleアプリに許可したDrive・Gmailの両方へ影響する場合があります。再利用には本人の再接続が必要です。</li><li><strong>HealthKitの許可を変更する：</strong>iPhoneのヘルスケアまたは設定からbk Healthの読み取り許可を変更できます。許可を外しても、取り込み済みのアプリ内記録が自動で消えるわけではありません。</li><li><strong>端末内の記録を削除する：</strong>日記や健康数値はアプリ内の削除操作で管理します。スキンケアの商品を一覧から保管扱いにしても、過去の使用記録に残した商品名は保持されます。端末の記録をすべて消したい場合は、必要なバックアップを先に確認し、アプリの削除を行ってください。KeychainにあるGoogleの接続情報がアプリの再インストール後も残る場合があるため、接続情報も取り消す場合はGoogle側の接続管理を併用してください。</li><li><strong>バックアップを削除する：</strong>Google Driveや本人が書き出したファイルの保存先で、対象ファイルを別途削除してください。必要に応じてそのサービスのゴミ箱も確認します。バックアップを消すと、そこからの復元ができなくなるため、残す世代を確認してから操作してください。</li></ul>
+      </section>
+      <section id="website"><h2>6. このWebサイトについて</h2><p>このサイトはアプリの紹介とデータの扱いを説明する静的なページです。健康記録やメールのアップロード欄、Googleアプリ連携のログイン機能、広告、独自のアクセス解析、追跡用スクリプトを設けていません。</p><p>ページを配信するホスティングサービスが、安全な配信・不正利用対策のために通常のアクセス情報を処理する場合があります。サイトに独自のCookieやトラッキングを追加していませんが、ホスティングサービスの認証・配信の仕組みはそのサービスに従います。</p></section>
+      <section id="changes"><h2>7. 変更と問い合わせ</h2><p>扱うデータ、送信先、利用目的が変わる場合は、この説明とアプリ内の案内を更新します。新しい権限が必要な機能は、本人が確認できる手順で追加します。</p><div class="draft-note"><strong>運営者・問い合わせ窓口</strong>運営者：bk（個人開発）／連絡先：<a href="mailto:kohei.donguri@gmail.com">kohei.donguri@gmail.com</a><br>問い合わせ時にパスワード、確認コード、顔写真、健康数値を送る必要はありません。</div></section>
+      <a class="back-link" href="/">← bk Healthの概要へ</a>
+    </main>
+    <footer class="site-footer"><span class="footer-name">bk Health · Personal health journal</span><nav class="footer-links" aria-label="フッターナビゲーション"><a href="/">概要</a><a href="/terms/">利用について</a></nav></footer>
+  </div>
+</body>
+</html>
